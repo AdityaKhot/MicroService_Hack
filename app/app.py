@@ -7,8 +7,8 @@ import random
 
 app = Flask(__name__)
 
-user = 'aditya-rohan'           # username as set for the mongodb admin server (the username used in secret.yaml - before base64 conversion)
-password = 'aditya'       # password as set for the mongodb admin server (the password used in secret.yaml - before base64 conversion)
+user = 'user-name'           # username as set for the mongodb admin server (the username used in secret.yaml - before base64 conversion)
+password = 'password'       # password as set for the mongodb admin server (the password used in secret.yaml - before base64 conversion)
 host = 'mongodb-service'    # service name of the mongodb admin server as set in mongo-service.yaml
 port = 27017              # port number of the mongodb admin server as set in mongo-deployment.yaml
 conn_string = f'mongodb://{user}:{password}@{host}:{port}'
@@ -75,7 +75,7 @@ def deletePost():
 @app.route('/fill-random')
 def fillRandom():
     titles=['Blogging','Hey!','Welcome to A^4 Blogging Web App','CC Cloud Micro Hack']
-    authors=['Adithya MS','Abhiram Puranik','Abhishek Aditya BS','A Sai Chaitanya']
+    authors=['Aditya Khot','Rohan Amin','Asif Hussain', 'Murali Raghavendra']
 
     for _ in range(10):
         randIndex = random.randint(0,3)
