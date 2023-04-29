@@ -1,6 +1,6 @@
 # CloudHack_1
 
-## Team Members : 
+## Team Members: 
 
 PES2UG20CS414  Aditya Rajendra Khot        
 PES2UG20CS416  Rohan Amin
